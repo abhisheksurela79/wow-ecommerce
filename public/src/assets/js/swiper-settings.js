@@ -33,7 +33,6 @@ let categoriesNavbarSwiper = new Swiper(".categories-navbar-swiper", {
   },
 });
 
-
 const homeSlider = new Swiper(".home-slider", {
   spaceBetween: 30,
   loop: true,
@@ -54,15 +53,14 @@ const homeSlider = new Swiper(".home-slider", {
   },
 });
 
-
 const gastronomySwiper = new Swiper(".gastronomy-swiper", {
   slidesPerView: 4,
   spaceBetween: 50,
   centeredSlides: false,
 
   navigation: {
-    nextEl: ".swiper-arrow-button-right",
-    prevEl: ".swiper-arrow-button-left",
+    nextEl: ".gastronomy-arrow-button-right",
+    prevEl: ".gastronomy-arrow-button-left",
   },
 
   breakpoints: {
@@ -174,5 +172,324 @@ const gastronomySwiper = new Swiper(".gastronomy-swiper", {
       slidesPerView: 4,
       spaceBetween: 50,
     },
+  },
+});
+
+const aestheticsWellbeing = new Swiper(".aesthetics-wellbeing-swiper", {
+  slidesPerView: 4,
+  spaceBetween: 50,
+  centeredSlides: false,
+
+  navigation: {
+    nextEl: ".aesthetics-wellbeing-arrow-button-right",
+    prevEl: ".aesthetics-wellbeing-arrow-button-left",
+  },
+  breakpoints: {
+    280: {
+      slidesPerView: 1,
+    },
+
+    302: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+
+    340: {
+      slidesPerView: 1,
+      spaceBetween: 1,
+    },
+
+    340: {
+      slidesPerView: 1,
+      spaceBetween: -5,
+    },
+
+    376: {
+      slidesPerView: 1,
+      spaceBetween: -60,
+    },
+
+    417: {
+      slidesPerView: 1,
+      spaceBetween: -100,
+    },
+
+    461: {
+      slidesPerView: 1,
+      spaceBetween: -140,
+    },
+
+    500: {
+      slidesPerView: 1,
+      spaceBetween: -180,
+    },
+
+    541: {
+      slidesPerView: 1,
+      spaceBetween: -220,
+    },
+
+    563: {
+      slidesPerView: 1,
+      spaceBetween: -250,
+    },
+
+    593: {
+      slidesPerView: 2,
+      spaceBetween: -10,
+    },
+
+    665: {
+      slidesPerView: 2,
+      spaceBetween: -80,
+    },
+
+    727: {
+      slidesPerView: 2,
+      spaceBetween: -130,
+    },
+
+    775: {
+      slidesPerView: 2,
+      spaceBetween: -160,
+    },
+
+    775: {
+      slidesPerView: 2,
+      spaceBetween: -180,
+    },
+
+    815: {
+      slidesPerView: 2,
+      spaceBetween: -220,
+    },
+
+    861: {
+      slidesPerView: 2,
+      spaceBetween: -250,
+    },
+
+    887: {
+      slidesPerView: 3,
+      spaceBetween: -10,
+    },
+
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: -150,
+    },
+
+    1095: {
+      slidesPerView: 3,
+      spaceBetween: -220,
+    },
+
+    1141: {
+      slidesPerView: 3,
+      spaceBetween: -250,
+    },
+
+    1169: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+  },
+});
+
+const aboutAesthetics = new Swiper(".about-aesthetics-swiper", {
+  slidesPerView: 4,
+  spaceBetween: 50,
+  centeredSlides: false,
+
+  navigation: {
+    nextEl: ".about-aesthetics-arrow-button-right",
+    prevEl: ".about-aesthetics-arrow-button-left",
+  },
+  breakpoints: {
+    280: {
+      slidesPerView: 1,
+    },
+
+    302: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+
+    340: {
+      slidesPerView: 1,
+      spaceBetween: 1,
+    },
+
+    340: {
+      slidesPerView: 1,
+      spaceBetween: -5,
+    },
+
+    376: {
+      slidesPerView: 1,
+      spaceBetween: -60,
+    },
+
+    417: {
+      slidesPerView: 1,
+      spaceBetween: -100,
+    },
+
+    461: {
+      slidesPerView: 1,
+      spaceBetween: -140,
+    },
+
+    500: {
+      slidesPerView: 1,
+      spaceBetween: -180,
+    },
+
+    541: {
+      slidesPerView: 1,
+      spaceBetween: -220,
+    },
+
+    563: {
+      slidesPerView: 1,
+      spaceBetween: -250,
+    },
+
+    593: {
+      slidesPerView: 2,
+      spaceBetween: -10,
+    },
+
+    665: {
+      slidesPerView: 2,
+      spaceBetween: -80,
+    },
+
+    727: {
+      slidesPerView: 2,
+      spaceBetween: -130,
+    },
+
+    775: {
+      slidesPerView: 2,
+      spaceBetween: -160,
+    },
+
+    775: {
+      slidesPerView: 2,
+      spaceBetween: -180,
+    },
+
+    815: {
+      slidesPerView: 2,
+      spaceBetween: -220,
+    },
+
+    861: {
+      slidesPerView: 2,
+      spaceBetween: -250,
+    },
+
+    887: {
+      slidesPerView: 3,
+      spaceBetween: -10,
+    },
+
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: -150,
+    },
+
+    1095: {
+      slidesPerView: 3,
+      spaceBetween: -220,
+    },
+
+    1141: {
+      slidesPerView: 3,
+      spaceBetween: -250,
+    },
+
+    1169: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+  },
+});
+
+const partnersCarrousel = new Swiper(".partners-carrousel", {
+  slidesPerView: 4,
+  spaceBetween: 185,
+  pagination: {
+    clickable: true,
+  },
+  breakpoints: {
+    220: {
+      slidesPerView: 1,
+      spaceBetween: 5,
+    },
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+    775: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+    823: {
+      slidesPerView: 4,
+      spaceBetween: 66,
+    },
+    841: {
+      slidesPerView: 4,
+      spaceBetween: 70,
+    },
+    887: {
+      slidesPerView: 4,
+      spaceBetween: 80,
+    },
+    911: {
+      slidesPerView: 4,
+      spaceBetween: 90,
+    },
+    953: {
+      slidesPerView: 4,
+      spaceBetween: 110,
+    },
+    1013: {
+      slidesPerView: 4,
+      spaceBetween: 130,
+    },
+    1069: {
+      slidesPerView: 4,
+      spaceBetween: 144,
+    },
+    1125: {
+      slidesPerView: 4,
+      spaceBetween: 166,
+    },
+    1215: {
+      slidesPerView: 4,
+      spaceBetween: 180,
+    },
+    1285: {
+      slidesPerView: 4,
+      spaceBetween: 185,
+    },
+    1375: {
+      slidesPerView: 4,
+      spaceBetween: 186,
+    }
+  },
+});
+
+const benefitsSlider = new Swiper(".benefits-slider", {
+  pagination: {
+    el: ".indicators",
+    clickable: true,
   },
 });
