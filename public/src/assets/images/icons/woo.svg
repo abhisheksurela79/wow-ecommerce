@@ -1,0 +1,44 @@
+<svg width="676" height="346" viewBox="0 0 676 346" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M506 341C412.263 341 336 264.52 336 170.5C336 76.4803 412.263 0 506 0C599.737 0 676 76.4871 676 170.5C676 264.513 599.737 341 506 341ZM506 83.3341C458.076 83.3341 419.09 122.442 419.09 170.5C419.09 218.558 458.076 257.666 506 257.666C553.924 257.666 592.91 218.565 592.91 170.5C592.91 122.435 553.917 83.3341 506 83.3341Z" fill="#01DC8C"/>
+<path d="M217.503 342C139.478 342 76 278.073 76 199.497C76 120.92 139.478 57 217.503 57C295.529 57 359 120.927 359 199.497C359 278.067 295.522 342 217.503 342ZM217.503 140.392C185.135 140.392 158.807 166.907 158.807 199.497C158.807 232.087 185.135 258.608 217.503 258.608C249.871 258.608 276.193 232.093 276.193 199.497C276.193 166.9 249.865 140.392 217.503 140.392Z" fill="#01DC8C"/>
+<path d="M38.9577 239.461C19.3733 236.048 6.25043 217.367 9.65462 197.732L38.1935 33L109.117 45.3497L80.5784 210.081C77.1742 229.717 58.5421 242.874 38.9577 239.461Z" fill="#01DC8C"/>
+<path d="M62.6981 312.124C72.3301 293.771 65.3061 271.061 47.0095 261.399C28.7129 251.737 6.07231 258.783 -3.5597 277.136C-13.1917 295.489 -6.16768 318.2 12.1289 327.861C30.4255 337.523 53.0661 330.477 62.6981 312.124Z" fill="#01DC8C"/>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</svg>
