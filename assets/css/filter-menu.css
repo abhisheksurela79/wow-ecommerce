@@ -1,0 +1,622 @@
+
+.filter-top {
+    display: flex;
+    align-items: center;
+    padding: 74px 0px 0px;
+    border-top: solid 2px #EAEAEA;
+    margin-bottom: 62px;
+    gap: 24px;
+  }
+  
+  .filter-top h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 30px;
+    line-height: 89%;
+    margin: 0;
+    flex: 1;
+    font-weight: 600;
+    color: #747474;
+  }
+  .filter-top > button {
+  
+    width: 260px;
+    height: 52px;
+    border: solid 2px #eaeaea;
+    border-radius: 8px;
+    background-color: white;
+    padding: 1px 8px 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .filter-top .order {
+    position: relative;
+  }
+  
+  .filter-top .order p {
+    position: absolute;
+    top: -32px;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .filter-top .order .select {
+    width: 260px;
+    height: 52px;
+    border: solid 2px #eaeaea;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 0 14px;
+    font-size: 16px;
+    text-align: left;
+    color: #8e8e8e;
+  }
+  
+  .filter-top .order .select.value {
+    color: black;
+  }
+  
+  .filter-top .order .select img {
+    position: absolute;
+    right: 16px;
+    top: 20px;
+    transform: rotate(90deg);
+    width: 10px;
+    filter: invert(0.1);
+  }
+  
+  .filter-top .order .select.selected {
+    color: #575757;
+  }
+  
+  .filter-top .order .select:focus {
+    border-color: white;
+    box-shadow: 0px 4px 15px #00000025;
+    outline: none;
+  }
+  
+  .filter-top .order .options {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 0px 4px 15px #00000039;
+    border-radius: 8px;
+    width: 100%;
+    top: 46px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 300ms;
+  }
+  
+  .filter-top .order .select:focus + .options, .filter-top .order .select + .options:focus-within {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .filter-top .order .options button {
+    padding: 12px 14px;
+    width: 100%;
+    text-align: left;
+    color: #575757;
+    font-size: 16px;
+    transform-origin: left center;
+    cursor: pointer;
+  }
+  
+  .filter-top .order .options button:hover {
+    transform: scale(1.08);
+  }
+  .filter {
+    margin-right: 24px;
+    width: 275px;
+  }
+  
+  .filter .clear {
+    background-color: white;
+  }
+  
+  .filter .clear a {
+    position: absolute;
+    right: 13px;
+    color: var(--grt);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px;
+  }
+  
+  .filter .top span {
+    color: var(--grt);
+    font-size: 12px;
+  }
+  
+  .filter .collapsible .top {
+    cursor: pointer;
+  }
+  
+  
+  .filter .collapsible .top button {
+    position: absolute;
+    right: 9px;
+    padding: 12px;
+    pointer-events: none;
+  }
+  
+  .filter .collapsible .top button img {
+    transform: rotate(90deg);
+    height: 12px;
+    transition: transform 300ms;
+  }
+  
+  .filter .collapsible .bottom > * {
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  
+  .filter .collapsible.open .top button img {
+    transform: rotate(-90deg);
+  }
+  
+  .filter .checkbox {
+    color: #747474;
+    background-color: white;
+    padding: 0px;
+  }
+  
+  
+  .filter .checkbox label:hover{
+    background-color: #f7f7f7;
+  }
+  
+  .filter .checkbox label {
+    user-select: none;
+    cursor: pointer;
+    height: 60px;
+    padding: 0 19px 0 24px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter .checkbox .switch {
+    position: absolute;
+    right: 9px;
+    background-color: #c2c2c2;
+    height: 22px;
+    width: 39px;
+    border-radius: 100px;
+    overflow: hidden;
+    transition: background-color 100ms;
+    pointer-events: none;
+  }
+  
+  .filter .checkbox .switch:after {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 100px;
+    box-shadow: 0 2px 6px #0000005d;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    transition: transform 100ms ease-out;
+  }
+  
+  .filter .checkbox .custom-checkbox:checked + .switch {
+    background-color: var(--gr);
+  }
+  
+  .filter .checkbox .custom-checkbox {
+    width: 38px;
+    height: 24px;
+    margin: 0;
+    position: absolute;
+    right: 9px;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .filter .checkbox .custom-checkbox:checked + .switch:after {
+    transform: translateX(17px);
+  }
+  
+  
+  
+  .filter .stars .bottom  label.radio-container {
+    gap: 2px;
+    padding-top: 11px;
+  }
+  
+  .filter .stars .bottom  .checkmark {
+    margin-right: 3px;
+  }
+  
+  
+  .filter .stars .bottom  span:last-child {
+    margin-left: 6px;
+    color: #747474;
+    font-size: 14px;
+    margin-top: 1px;
+    margin-bottom: -1px;
+  }
+  
+  
+  .filter .stars .bottom img {
+    width: 19px;
+    height: 19px;
+    user-select: none;
+    pointer-events: none;
+    filter: invert(86%) sepia(0%) saturate(0%) hue-rotate(153deg) brightness(99%) contrast(77%);
+  }
+  .filter .stars .bottom  img.filled  {
+    filter: invert(66%) sepia(31%) saturate(7278%) hue-rotate(109deg) brightness(93%) contrast(87%);
+  }
+  
+  .filter .price.collapsible .bottom > div {
+    padding: 0;
+  } 
+  
+  .filter .price.collapsible .bottom > div > p, .filter .price.collapsible .bottom > div .range {
+    padding: 0 19px 0 24px;
+  }
+  
+  .filter .price .range {
+    display: flex;
+    gap: 6px;
+    height: 40px;
+    align-items: stretch;
+    line-height: 40px;
+  }
+  
+  .filter .price .range input, .filter .price .range button {
+    flex: 1;
+    min-width: 0px;
+    border: solid 1px #c4c4c4;
+    border-radius: 6px;
+    background-color: transparent;
+    padding: 6px;
+  }
+  
+  .filter .price .range input:focus {
+    outline: none;
+    border-color: #5f5f5f; 
+  }
+  
+  .filter .price .apply {
+    margin-left: 24px;
+    margin-right: 19px;
+  }
+  
+  .filter .price .apply button {
+    border-color: var(--grt);
+    color: var(--grt);
+    background-color: #C9F5E5;
+    font-weight: 600;
+    margin-top: 26px;
+    width: 80px;
+    height: 40px;
+    padding: 0px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: solid 1px var(--grt);
+  }
+  
+  .results {
+    display: grid;
+    grid-template-columns: 298px auto;
+    transition: grid-template-columns 300ms;
+    align-items: start;
+  }
+  
+  .results .grid {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-content: flex-start;
+    margin-bottom: 60px;
+  }
+  
+  .results .grid > a {
+    text-decoration: none;
+  }
+  
+  .results .grid .card {
+    margin-right: 0px;
+  }
+  
+  .results.hide-filter-menu {
+    grid-template-columns: 14px auto;
+  }
+  
+  .hide-filter-menu .filter {
+    width: 274px;
+    transform: translateX(-24px);
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  p.not-found {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 26px;
+    user-select: none;
+    color: #7e7e7e;
+  }
+  
+  
+  @media screen and (max-width: 845px) {
+    .filter-top {
+      flex-wrap: wrap;
+    }
+    .filter-top h2 {
+      min-width: calc(100vw - 38px);
+      margin-bottom: 12px;
+    }
+  
+  }
+  
+
+  @media screen and (max-width: 600px) {
+    .results {
+      display: block;
+    }
+    
+    .hide-filter-menu .filter {
+      width: 100%;
+    }
+
+    .filter-top h2 {
+      font-size: 16px;
+      min-width: auto;
+      margin-bottom: 0px;
+      color: black;
+    }
+    .filter-top {
+      margin-bottom: 35px;
+      position: relative;
+      left: -24px;
+      width: 100vw;
+      padding: 22px 24px 0;
+      box-sizing: border-box;
+      gap: 8px;
+    }
+  
+    .filter-top button {
+      width: 80px;
+      height: 24px;
+      font-size: 12px;
+      gap: 4px;
+      color: black;
+    }
+    .filter-top button img {
+      height: 12px;
+    }
+  
+    .results {
+      position: relative;
+      left: -24px;
+      width: 100vw;
+      grid-template-columns: 1fr auto;
+    }
+  
+    .results .grid {
+      display: grid;
+      gap: 4px;
+      padding: 0 16px;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 28px;
+    }
+  
+    .results .grid .card {
+      width: 100%;
+      height: 345px;
+    }
+  
+    .cards .grid .card .image-container, .cards .grid .card:before {
+      height: 166px;
+      min-height: 166px;
+      width: calc(100% + 3px);
+    }
+  
+    .cards .grid .card .image-container > img {
+      width: 100%;
+    }
+    .cards .grid .card .tags {
+      top: 151px;
+    }
+  
+    .cards .grid .card .title {
+      margin-top: 20px;
+    }
+  
+    .cards .grid .card .stars {
+      position: absolute;
+      right: 6px;
+      top: 160px
+    }
+    .cards .grid .card .highlight {
+      bottom: 51px;
+    }
+  
+  
+  
+    .filter {
+      position: fixed;
+      width: 100vw;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 100%;
+      z-index: 8;
+      transform: translateY(50%);
+      opacity: 0;
+      pointer-events: none;
+    }
+  
+    .results.show-filters .filter {
+      transform: translateY(0%);
+      pointer-events: all;
+      opacity: 1;
+    }
+    .filter > div {
+      width: 100vw;
+      height: calc(100vh - 60px);
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  
+    html:has(.results.show-filters) {
+      overflow-y: hidden;
+    }
+  
+    .filter .top, .filter .checkbox, aside.order .top, aside.order .checkbox {
+      padding: 0 40px;
+  
+    }
+  
+    .filter .top > button, .filter .checkbox > button {
+      right: 35px;
+    }
+    .filter .collapsible .top button {
+    }
+  
+    html:has(.results.show-order) {
+      overflow-y: hidden;
+    }
+  
+    .grid:has(.not-found) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
+  .filter > .close, aside.order > .close {
+    height: 58px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+  }
+  
+  .filter > .close img, aside.order > .close img {
+    filter: brightness(0);
+  }
+  
+  aside.order {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 10;
+    transition: transform 300ms, opacity 300ms;
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  
+  aside.order ul {
+    margin: 0;
+  }
+  
+  .order-veil {
+    content: " ";
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #0000006e;
+    z-index: 5;
+    pointer-events: none;
+    transition: opacity 300ms ease;
+    opacity: 0;
+  }
+  
+  .show-order aside.order {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  
+  .show-order .order-veil {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .loading-veil {
+    display: block;
+    position: absolute;
+    background-color: #ffffff96;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    z-index: 2;
+    grid-column: 2 / 3;
+    display: none;
+    pointer-events: none;
+  }
+  .loading-veil p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 18px;
+    margin-top: 100px;
+  }
+  .loading-veil .ld-ring:after {
+    border-width: 0.15em;
+  }
+  
+  #results.loading .loading-veil {
+    display: block;
+  }
+  
+  aside.bottom-menu.filter .menu-bottom {
+    padding: 0 19px 0 0;
+    height: 58px;
+    overflow: hidden;
+  }
+  
+  .menu-bottom .close {
+    height: 58px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-bottom .filter-buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .menu-bottom .filter-buttons button {
+    width: 113px;
+    height: 40px;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 15px;
+  }
+  
+  .menu-bottom .filter-buttons #clear-filters {
+    background-color: #EAEAEA;
+    color: #747474;
+  }
+  .menu-bottom .filter-buttons #apply-filters {
+    background-color: var(--gr);
+    color: white;
+  }

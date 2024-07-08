@@ -1,0 +1,216 @@
+aside.bottom-menu {
+    transition: transform 300ms, opacity 300ms;
+    background-color: #f8f8f8;
+  }
+  
+  @media screen and (max-width: 600px) {
+    aside.bottom-menu {
+      position: fixed;
+      opacity: 0;
+      left: 0px;
+      pointer-events: none;
+      width: 100%;
+      transform: translateY(200px);
+      bottom: 0px;
+      z-index: 10;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      width: 100vw;
+    }
+    aside.bottom-menu > *:first-child {
+      height: calc(100% - 60px);
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  }
+  
+  aside.bottom-menu .collapsible .bottom ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  aside.bottom-menu > div > div {
+    border-top: solid 1px #eaeaea;
+    min-height: 60px;
+  }
+  aside.bottom-menu .top, aside.bottom-menu .checkbox {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+    color: #151515;
+    font-weight: 600;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  aside.bottom-menu .collapsible .top {
+    background-color: white;
+  }
+  aside.bottom-menu .collapsible .bottom {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: grid-template-rows 300ms;
+    border-top: solid 1px #eaeaea;
+  }
+  aside.bottom-menu .collapsible .bottom {
+    overflow: hidden;
+    margin: 0;
+  }
+  aside.bottom-menu .collapsible.open .bottom,
+  aside.bottom-menu .collapsible.options .bottom {
+    grid-template-rows: 1fr;
+  }
+  aside.bottom-menu .collapsible .bottom {
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  
+  aside.bottom-menu ul {
+    list-style: none;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  aside.bottom-menu ul li:first-child {
+    margin-top: 12px;
+  }
+  aside.bottom-menu ul li:last-child {
+    margin-bottom: 10px;
+  }
+  aside.bottom-menu .check {
+    width: 17px;
+    min-width: 17px;
+    height: 17px;
+    border-radius: 100px;
+    background-color: #f8f8f8;
+    border: solid 1px #dfdfdf;
+  }
+  aside.bottom-menu .checked .check {
+    background-color: var(--gr);
+    background-image: url("../icons/check.html");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  aside.bottom-menu .check.radio {
+    border-radius: 3px;
+  }
+  
+  aside.bottom-menu .radio-container .checkmark.square {
+    border-radius: 3px;
+  }
+  
+  
+  aside.bottom-menu ul li .radio-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 19px 13px 59px;
+    user-select: none;
+  }
+  
+  
+  .radio-container {
+    position: relative;
+    padding-left: 35px;
+    font-size: 13px;
+  }
+  
+
+  aside.bottom-menu ul li .radio-container .custom-radio {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+
+  aside.bottom-menu ul li .radio-container .checkmark {
+    position: absolute;
+    top: 12px;
+    left: 24px;
+    width: 17px;
+    height: 17px;
+    border-radius: 100px;
+    background-color: #f8f8f8;
+    border: solid 1px #dfdfdf;
+  }
+  
+
+  aside.bottom-menu ul li .radio-container .custom-radio:checked ~ .checkmark {
+    background-color: var(--gr);
+    background-image: url("../icons/check.html");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  aside.bottom-menu ul li .radio-container .checkmark.checked {
+    background-color: var(--gr);
+    background-image: url("../icons/check.html");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  aside.bottom-menu ul li .radio-container:hover {
+    background-color: #eeeeee;
+  }
+  
+  
+  aside.bottom-menu .top {
+    padding: 0 19px 0 24px;
+  }
+  
+  aside.bottom-menu .collapsible .bottom > * {
+    padding: 0 19px 0 24px;
+  }
+  
+  aside.bottom-menu > .close,
+  aside.bottom-menu > .menu-bottom {
+    height: 58px;
+    display: flex;
+    align-items: center;
+    padding: 0 19px 0 24px;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+  }
+  aside.bottom-menu .close img {
+    filter: brightness(0);
+  }
+  
+  
+  aside.bottom-menu + .veil {
+    content: " ";
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #0000006e;
+    z-index: 5;
+    pointer-events: none;
+    transition: opacity 300ms ease;
+    opacity: 0;
+  }
+  
+  aside.bottom-menu.open {
+    transform: translateY(0px);
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  aside.bottom-menu.open + .veil {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  
+  html:has(aside.bottom-menu.open) {
+    overflow-y: hidden;
+  }

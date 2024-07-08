@@ -1,0 +1,108 @@
+:root {
+    --cw: 1126px;
+    /*  content-width */
+    --lg: #D1DCD8;
+    /* lightgray */
+    --gr: #01dc8c;
+    /* green woow color */
+    --grh: #0bc682;
+    /* green woow hover */
+    --grt: #11B862;
+    /* green woow color text */
+    --grd: #055035;
+    /* green dark woow color */
+}
+
+.btn {
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 8px;
+    color: white;
+    background-color: var(--gr);
+    font-weight: 900;
+    font-size: 15px;
+    min-width: 180px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    margin-right: 12px;
+}
+
+.btn:hover {
+    background-color: var(--grh);
+}
+
+.btn.secondary {
+    background-color: #EAEAEA;
+    color: #747474;
+}
+
+.btn.wide {
+    width: 100%;
+}
+
+a.btn:visited {
+    color: white;
+}
+
+a.btn.secondary {
+    color: #747474;
+}
+
+a.btn {
+    line-height: 40px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100vw;
+}
+
+body {
+    overflow: hidden;
+}
+
+button img {
+    user-select: none;
+    pointer-events: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #eaeaea;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #D9D9D9;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #c2c2c2;
+}
+
+.swiper {
+    height: 100%;
+}

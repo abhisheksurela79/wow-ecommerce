@@ -1,0 +1,383 @@
+<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - woOw!</title>
+    <meta name="description" content="This is a full-stack clone of https://woow.com.uy/ created by Abhishek, a UI Intern at E Global Soft Solutions. The frontend is built using HTML, CSS, and JavaScript with TailwindCSS for styling. The backend is developed with Django, a full-stack framework written in Python 3." />
+    <link rel="stylesheet" href="assets/css/tailwind/output.html" />
+    <link rel="stylesheet" href="assets/css/base-fonts.css" />
+    <link rel="stylesheet" href="assets/css/base-theme.css" />
+    <link rel="stylesheet" href="assets/css/style.css" media="all" />
+    <link rel="stylesheet" href="assets/css/login.css" media="all" />
+    <!-- Favicon Here -->
+    <link rel="shortcut icon" href="assets/images/favicons/favicon-1-1.png" type="image/x-icon" />
+  </head>
+  <body>
+        <!-- Navbar Section Starts Here -->
+        <header>
+          <div class="menu">
+            <button onclick="document.querySelector('aside.menu').classList.add('open')">
+              <img src="assets/images/icons/menu.svg" alt="menu icon" draggable="false" />
+            </button>
+          </div>
+          <div class="container">
+            <a href="home.html" class="brand">
+              <img src="assets/images/logos/site-logo.svg" alt="site logo" draggable="false" />
+            </a>
+            <div class="options">
+              <div class="search-container">
+                <form action="#" method="get" autocomplete="off">
+                  <input type="text" id="keyword" class="search-input_search" placeholder="search..." />
+                </form>
+                <img src="assets/images/icons/search.svg" alt="search icon" />
+                <img src="assets/images/icons/close.svg" alt="close icon" class="delete" />
+                <div class="search_result">
+                  <div class="search-contained" >
+                    <h2>Categories</h2>
+                    <div class="search-categories">
+                      <a href="#">Getaways</a>
+                      <a href="#">Gastronomy</a>
+                      <a href="#">Aesthetics and Wellness </a>
+                      <a href="#">Entertainment </a>
+                      <a href="#">Courses</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="login.html" class="d-only">
+                <button class="profile">
+                  <img src="assets/images/icons/profile.svg" alt="profile icon" />
+                </button>
+              </a>
+              <a href="###" class="m-only">
+                <button class="profile">
+                  <img src="assets/images/icons/profile.svg" alt="profile icon" />
+                </button>
+              </a>
+              <a href="###">
+                <button class="like">
+                  <img src="assets/images/icons/like.svg" alt="favorites icon" />
+                </button>
+              </a>
+              <button class="cart">
+                <img src="assets/images/icons/cart.svg" alt="cart icon" />
+              </button>
+            </div>
+          </div>
+    
+        </header>
+        <!-- Navbar Section Ends Here -->
+    
+        <!-- Sidebar Section Starts Here -->
+        <aside class="menu">
+          <div>
+            <a href="###">Log In</a>
+    
+            <h4>Categories</h4>
+            <div class="collapsible">
+              <button onclick="this.parentNode.classList.toggle('open')">
+                <h4>
+                  <svg viewBox="0 0 131 313" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M59.9577 206.461C40.3733 203.048 27.2504 184.367 30.6546 164.732L59.1935 0L130.117 12.3497L101.578 177.081C98.1742 196.717 79.5421 209.874 59.9577 206.461Z" fill="" />
+                    <path
+                      d="M83.6981 279.124C93.3301 260.771 86.3061 238.061 68.0095 228.399C49.7129 218.737 27.0723 225.783 17.4403 244.136C7.80829 262.489 14.8323 285.2 33.1289 294.861C51.4255 304.523 74.0661 297.477 83.6981 279.124Z"
+                      fill=""
+                    />
+                  </svg>
+                  Getaways
+                </h4>
+                <img src="assets/images/icons/right.svg" alt="down arrow icon" />
+              </button>
+              <div>
+                <a href="###"><b>All Getaways</b></a>
+                <a href="###">Hotels</a>
+                <a href="###">Destinations</a>
+                <a href="###">Day in the countryside</a>
+                <a href="###">Heated Pools</a>
+              </div>
+            </div>
+            <div class="collapsible">
+              <button onclick="this.parentNode.classList.toggle('open')">
+                <h4>
+                  <svg viewBox="0 0 131 313" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M59.9577 206.461C40.3733 203.048 27.2504 184.367 30.6546 164.732L59.1935 0L130.117 12.3497L101.578 177.081C98.1742 196.717 79.5421 209.874 59.9577 206.461Z" fill="#f85f55" />
+                    <path
+                      d="M83.6981 279.124C93.3301 260.771 86.3061 238.061 68.0095 228.399C49.7129 218.737 27.0723 225.783 17.4403 244.136C7.80829 262.489 14.8323 285.2 33.1289 294.861C51.4255 304.523 74.0661 297.477 83.6981 279.124Z"
+                      fill="#f85f55"
+                    />
+                  </svg>
+                  Gastronomy
+                </h4>
+                <img src="assets/images/icons/right.svg" alt="down arrow icon" />
+              </button>
+              <div>
+                <a href="###"><b>All Gastronomy</b></a>
+                <a href="###">Grill</a>
+                <a href="###">Gourmet Experience</a>
+                <a href="###">Menu for 2</a>
+                <a href="###">Snacks</a>
+                <a href="###">Quick Meals</a>
+                <a href="###">Bakery and Celebrations</a>
+                <a href="###">Buffet</a>
+              </div>
+            </div>
+            <div class="collapsible">
+              <button onclick="this.parentNode.classList.toggle('open')">
+                <h4>
+                  <svg viewBox="0 0 131 313" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M59.9577 206.461C40.3733 203.048 27.2504 184.367 30.6546 164.732L59.1935 0L130.117 12.3497L101.578 177.081C98.1742 196.717 79.5421 209.874 59.9577 206.461Z" fill="" />
+                    <path
+                      d="M83.6981 279.124C93.3301 260.771 86.3061 238.061 68.0095 228.399C49.7129 218.737 27.0723 225.783 17.4403 244.136C7.80829 262.489 14.8323 285.2 33.1289 294.861C51.4255 304.523 74.0661 297.477 83.6981 279.124Z"
+                      fill=""
+                    />
+                  </svg>
+                  Aesthetics and Wellness
+                </h4>
+                <img src="assets/images/icons/right.svg" alt="down arrow icon" />
+              </button>
+              <div>
+                <a href="###"><b>All Aesthetics and Wellness</b></a>
+                <a href="###">Treatments</a>
+                <a href="###">Depilation</a>
+                <a href="###">Hair Salon Combos</a>
+                <a href="###">Spa Experience</a>
+                <a href="###">Day Spa</a>
+                <a href="###">Massages</a>
+                <a href="###">Men's Hair Salon</a>
+                <a href="###">Dentistry</a>
+                <a href="###">Face and Skin</a>
+                <a href="###">Progressive Treatments</a>
+                <a href="###">Body Wellness</a>
+                <a href="###">Hair Coloring</a>
+              </div>
+            </div>
+            <div class="collapsible">
+              <button onclick="this.parentNode.classList.toggle('open')">
+                <h4>
+                  <svg viewBox="0 0 131 313" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M59.9577 206.461C40.3733 203.048 27.2504 184.367 30.6546 164.732L59.1935 0L130.117 12.3497L101.578 177.081C98.1742 196.717 79.5421 209.874 59.9577 206.461Z" fill="#e435ea" />
+                    <path
+                      d="M83.6981 279.124C93.3301 260.771 86.3061 238.061 68.0095 228.399C49.7129 218.737 27.0723 225.783 17.4403 244.136C7.80829 262.489 14.8323 285.2 33.1289 294.861C51.4255 304.523 74.0661 297.477 83.6981 279.124Z"
+                      fill="#e435ea"
+                    />
+                  </svg>
+                  Entertainment
+                </h4>
+                <img src="assets/images/icons/right.svg" alt="down arrow" />
+              </button>
+              <div>
+                <a href="###"><b>All Entertainment</b></a>
+                <a href="###">Recreation and Games</a>
+                <a href="###">Cultural Activities</a>
+              </div>
+            </div>
+            <div class="collapsible">
+              <button onclick="this.parentNode.classList.toggle('open')">
+                <h4>
+                  <svg viewBox="0 0 131 313" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M59.9577 206.461C40.3733 203.048 27.2504 184.367 30.6546 164.732L59.1935 0L130.117 12.3497L101.578 177.081C98.1742 196.717 79.5421 209.874 59.9577 206.461Z" fill="" />
+                    <path
+                      d="M83.6981 279.124C93.3301 260.771 86.3061 238.061 68.0095 228.399C49.7129 218.737 27.0723 225.783 17.4403 244.136C7.80829 262.489 14.8323 285.2 33.1289 294.861C51.4255 304.523 74.0661 297.477 83.6981 279.124Z"
+                      fill=""
+                    />
+                  </svg>
+                  Courses
+                </h4>
+                <img src="assets/images/icons/right.svg" alt="down arrow icon" />
+              </button>
+              <div>
+                <a href="###">All Courses</a>
+                <a href="###">Computer Science and Programming</a>
+                <a href="###">Marketing and Business</a>
+                <a href="###">Design and Photography</a>
+                <a href="###">Intensive Courses</a>
+              </div>
+            </div>
+    
+            <a href="###">Best Sellers</a>
+            <a href="###">Get to Know woOw!</a>
+            <a href="###">Offer Your Services</a>
+            <a href="###">Help</a>
+          </div>
+          <button class="close" onclick="document.querySelector('aside.menu').classList.remove('open')">
+            Close
+            <img src="assets/images/icons/close.svg" alt="close" />
+          </button>
+        </aside>
+        <!-- Sidebar Section Ends Here -->
+    
+        <!-- Hamburger close Sidebar on Desktop View -->
+        <div class="vail" onclick="document.querySelector('aside.menu').classList.remove('open')"></div>
+
+    <!-- Login Form Starts Here -->
+    <div class="woocommerce">
+      <main>
+        <div class="category-background flat"></div>
+        <div class="breadcrumb">
+          <a href="javascript:history.go(-1)" class="back">
+            <img decoding="async" src="assets/images/icons/up.svg" alt="back arrow" />
+          </a>
+          <ul>
+            <li>Home</li>
+            <li><a href="https://showcaseonline.store/public/src/login.html">Log In / Register</a></li>
+          </ul>
+        </div>
+        <div class="hiro title">
+          <h1>Log In / Register</h1>
+        </div>
+
+        <div class="content">
+          <div class="u-columns col2-set" id="customer_login">
+            <div class="form-content">
+              <div class="woocommerce-notices-wrapper"></div>
+              <h3>Log In</h3>
+              <form class="woocommerce-form woocommerce-form-login login" method="post">
+                <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                  <label for="username">Username or email address&nbsp;<span class="required">*</span></label>
+                  <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value="" />
+                </p>
+                <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                  <label for="password">Password&nbsp;<span class="required">*</span></label>
+                  <input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password" />
+                </p>
+                <p class="form-row">
+                  <label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
+                    <input class="terms woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span>Remember me</span>
+                  </label>
+                  <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="b9228c8004" /><input type="hidden" name="_wp_http_referer" value="/my-account/" />
+                </p>
+                <button type="submit" class="btn woocommerce-button button woocommerce-form-login__submit" name="login" value="Log In">Log In</button>
+                <p class="woocommerce-LostPassword lost_password">
+                  <a href="https://showcaseonline.store/public/src/forget-password.html">Forgot your password?</a>
+                </p>
+              </form>
+            </div>
+            <div class="form-content">
+              <div class="u-column2 col-2">
+                <h2>Not registered?</h2>
+                <h3>Create an account here:</h3>
+                <a href="https://showcaseonline.store/public/src/sign-up.html" class="btn">Register</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- Login Form Ends Here -->
+
+    <!-- Footer Section Starts Here -->
+    <footer>
+      <div class="main">
+        <button class="up" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+          <img src="assets/images/icons/up.svg" alt="up arrow" />
+        </button>
+        <div class="side">
+          <div>
+            <img src="assets/images/logos/site-logo.svg" alt="site logo" />
+            <p>Join us and discover the best shopping opportunities.</p>
+          </div>
+          <div>
+            <a href="sign-up.html" class="btn">Join</a>
+            <a href="login.html" class="btn secondary">Log In</a>
+          </div>
+          <div class="registry">
+            <img src="assets/images/qr_codes/site-qr-code.jpg" alt="QR" />
+            <img src="assets/images/icons/uruguay-natural.svg" alt="uruguay natural" />
+            <span>Verify company registration information. ROT MINTURD</span>
+          </div>
+        </div>
+        <div class="content">
+          <div class="columns">
+            <div>
+              <div>
+                <h4><a href="###">Getaways</a></h4>
+                <a href="###">Hotels</a>
+                <a href="###">Destinations</a>
+                <a href="###">Day trips</a>
+                <a href="###">Heated pools</a>
+              </div>
+              <div>
+                <h4><a href="###">Gastronomy</a></h4>
+                <a href="###">Grill</a>
+                <a href="###">Gourmet experience</a>
+                <a href="###">Menu for 2</a>
+                <a href="###">Snacks</a>
+                <a href="###">Fast food</a>
+                <a href="###">Confectionery and celebrations</a>
+                <a href="###">Buffet</a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <h4><a href="###">Beauty and Wellness</a></h4>
+                <a href="###">Treatments</a>
+                <a href="###">Hair removal</a>
+                <a href="###">Hairdressing combos</a>
+                <a href="###">Spa experience</a>
+                <a href="###">Day spa</a>
+                <a href="###">Massages</a>
+                <a href="###">Men's hairdressing</a>
+                <a href="###">Dentistry</a>
+                <a href="###">Face and skin</a>
+                <a href="###">Progressives</a>
+                <a href="###">Body wellness</a>
+                <a href="###">Coloration</a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <h4><a href="###">Courses</a></h4>
+                <a href="###">Computing and programming</a>
+                <a href="###">Marketing and business</a>
+                <a href="###">Design and photography</a>
+                <a href="###">Intensive courses</a>
+              </div>
+              <div>
+                <h4><a href="###">Entertainment</a></h4>
+                <a href="###">Recreation and games</a>
+                <a href="###">Cultural activities</a>
+              </div>
+            </div>
+            <div>
+              <div class="sociallist">
+                <h4>Social Media</h4>
+                <a href="###" class="social"><img src="assets/images/icons/facebook.svg" alt="Facebook logo" />Facebook</a>
+                <a href="###" class="social"><img src="assets/images/icons/instagram.svg" alt="Instagram logo" />Instagram</a>
+              </div>
+              <div>
+                <a href="###"><h3 class="contact">Contact</h3></a>
+                <h4>Ethics Line</h4>
+                <a href="tel:59825089600">(+598) 25089600 ext. 4600</a>
+                <a href="mailto:etica@woow.com.uy">etica@woow.com.uy</a>
+              </div>
+            </div>
+          </div>
+          <div class="payment">
+            <h4>Payment Methods</h4>
+            <div class="methods">
+              <div><img src="assets/images/icons/visa.svg" alt="visa" /></div>
+              <div><img src="assets/images/icons/master-card.svg" alt="master card" /></div>
+              <div><img src="assets/images/icons/oca.svg" alt="oca" /></div>
+              <div><img src="assets/images/icons/cabal.svg" alt="cabal" /></div>
+              <div><img src="assets/images/icons/creditel.svg" alt="creditel" /></div>
+              <div><img src="assets/images/icons/dinersclub.svg" alt="dinersclub" /></div>
+              <div><img src="assets/images/icons/lider.svg" alt="lider" /></div>
+              <div><img src="assets/images/icons/tarjetad.svg" alt="tarjetad" /></div>
+              <div><img src="assets/images/icons/bbvanet.svg" alt="bbvanet" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="legal">
+        &copy; woOw! 2024
+        <div class="links">
+          <a href="###">Privacy Policy</a>
+          <a href="###">FAQs</a>
+          <a href="###">Terms and Conditions</a>
+          <a href="###">Suggestions</a>
+          <a href="###">Designed by <u>ZoneWebsites</u></a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section Ends Here -->
+  </body>
+</html>

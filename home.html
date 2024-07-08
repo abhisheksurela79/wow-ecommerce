@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My account - woOw!</title>
+    <meta name="description" content="This is a full-stack clone of https://woow.com.uy/ created by Abhishek, a UI Intern at E Global Soft Solutions. The frontend is built using HTML, CSS, and JavaScript with TailwindCSS for styling. The backend is developed with Django, a full-stack framework written in Python 3." />
+    <link rel="stylesheet" href="assets/css/base-fonts.css" />
+    <link rel="stylesheet" href="assets/css/base-theme.css" />
+    <link rel="stylesheet" href="assets/css/style.css" media="all" />
+    <link rel="stylesheet" href="assets/css/swiper/swiper.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="assets/css/institutional.css" />
+    <!-- Favicon Here -->
+    <link rel="shortcut icon" href="assets/images/favicons/favicon-1-1.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Navbar Section Starts Here -->
+    <header>
+      <div class="menu">
+        <button onclick="document.querySelector('aside.menu').classList.add('open')">
+          <img src="assets/images/icons/menu.svg" alt="menu icon" draggable="false" />
+        </button>
+      </div>
+      <div class="container">
+        <a href="home.html" class="brand">
+          <img src="assets/images/logos/site-logo.svg" alt="site logo" draggable="false" />
+        </a>
+        <div class="options">
+          <div class="search-container">
+            <form action="#" method="get" autocomplete="off">
+              <input type="text" id="keyword" class="search-input_search" placeholder="search..." />
+            </form>
+            <img src="assets/images/icons/search.svg" alt="search icon" />
+            <img src="assets/images/icons/close.svg" alt="close icon" class="delete" />
+            <div class="search_result">
+              <div class="search-contained" >
+                <h2>Categories</h2>
+                <div class="search-categories">
+                  <a href="#">Getaways</a>
+                  <a href="#">Gastronomy</a>
+                  <a href="#">Aesthetics and Wellness </a>
+                  <a href="#">Entertainment </a>
+                  <a href="#">Courses</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="login.html" class="d-only">
+            <button class="profile">
+              <img src="assets/images/icons/profile.svg" alt="profile icon" />
+            </button>
+          </a>
+          <a href="###" class="m-only">
+            <button class="profile">
+              <img src="assets/images/icons/profile.svg" alt="profile icon" />
+            </button>
+          </a>
+          <a href="###">
+            <button class="like">
+              <img src="assets/images/icons/like.svg" alt="favorites icon" />
+            </button>
+          </a>
+          <button class="cart">
+            <img src="assets/images/icons/cart.svg" alt="cart icon" />
+          </button>
+        </div>
+      </div>
+
+    </header>
+    <!-- Navbar Section Ends Here -->
+
+    <!-- Sidebar Section Starts Here -->
+    <aside class="menu">
+      <div>
+        <a href="###">Log In</a>
+
+        <h4>Categories</h4>
+        <div class="collapsible">
+          <button onclick="this.parentNode.classList.toggle('open')">
+            <h4>
+              <svg viewBox="0 0 131 313" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M59.9577 206.461C40.3733 203.048 27.2504 184.367 30.6546 164.732L59.1935 0L130.117 12.3497L101.578 177.081C98.1742 196.717 79.5421 209.874 59.9577 206.461Z" fill="" />
+                <path
+                  d="M83.6981 279.124C93.3301 260.771 86.3061 238.061 68.0095 228.399C49.7129 218.737 27.0723 225.783 17.4403 244.136C7.80829 262.489 14.8323 285.2 33.1289 294.861C51.4255 304.523 74.0661 297.477 83.6981 279.124Z"
+                  fill=""
+                />
+              </svg>
+              Getaways
+            </h4>
+            <img src="assets/images/icons/right.svg" alt="down arrow icon" />
+          </button>
+          <div>
+            <a href="###"><b>All Getaways</b></a>
+            <a href="###">Hotels</a>
+            <a href="###">Destinations</a>
+            <a href="###">Day in the countryside</a>
+            <a href="###">Heated Pools</a>
+          </div>
+        </div>
+        <div class="collapsible">
+          <button onclick="this.parentNode.classList.toggle('open')">
+            <h4>
+              <svg viewBox="0 0 131 313" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M59.9577 206.461C40.3733 203.048 27.2504 184.367 30.6546 164.732L59.1935 0L130.117 12.3497L101.578 177.081C98.1742 196.717 79.5421 209.874 59.9577 206.461Z" fill="#f85f55" />
+                <path
+                  d="M83.6981 279.124C93.3301 260.771 86.3061 238.061 68.0095 228.399C49.7129 218.737 27.0723 225.783 17.4403 244.136C7.80829 262.489 14.8323 285.2 33.1289 294.861C51.4255 304.523 74.0661 297.477 83.6981 279.124Z"
+                  fill="#f85f55"
+                />
+              </svg>
+              Gastronomy
+            </h4>
+            <img src="assets/images/icons/right.svg" alt="down arrow icon" />
+          </button>
+          <div>
+            <a href="###"><b>All Gastronomy</b></a>
+            <a href="###">Grill</a>
+            <a href="###">Gourmet Experience</a>
+            <a href="###">Menu for 2</a>
+            <a href="###">Snacks</a>
+            <a href="###">Quick Meals</a>
+            <a href="###">Bakery and Celebrations</a>
+            <a href="###">Buffet</a>
+          </div>
+        </div>
+        <div class="collapsible">
+          <button onclick="this.parentNode.classList.toggle('open')">
+            <h4>
+              <svg viewBox="0 0 131 313" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M59.9577 206.461C40.3733 203.048 27.2504 184.367 30.6546 164.732L59.1935 0L130.117 12.3497L101.578 177.081C98.1742 196.717 79.5421 209.874 59.9577 206.461Z" fill="" />
+                <path
+                  d="M83.6981 279.124C93.3301 260.771 86.3061 238.061 68.0095 228.399C49.7129 218.737 27.0723 225.783 17.4403 244.136C7.80829 262.489 14.8323 285.2 33.1289 294.861C51.4255 304.523 74.0661 297.477 83.6981 279.124Z"
+                  fill=""
+                />
+              </svg>
+              Aesthetics and Wellness
+            </h4>
+            <img src="assets/images/icons/right.svg" alt="down arrow icon" />
+          </button>
+          <div>
+            <a href="###"><b>All Aesthetics and Wellness</b></a>
+            <a href="###">Treatments</a>
+            <a href="###">Depilation</a>
+            <a href="###">Hair Salon Combos</a>
+            <a href="###">Spa Experience</a>
+            <a href="###">Day Spa</a>
+            <a href="###">Massages</a>
+            <a href="###">Men's Hair Salon</a>
+            <a href="###">Dentistry</a>
+            <a href="###">Face and Skin</a>
+            <a href="###">Progressive Treatments</a>
+            <a href="###">Body Wellness</a>
+            <a href="###">Hair Coloring</a>
+          </div>
+        </div>
+        <div class="collapsible">
+          <button onclick="this.parentNode.classList.toggle('open')">
+            <h4>
+              <svg viewBox="0 0 131 313" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M59.9577 206.461C40.3733 203.048 27.2504 184.367 30.6546 164.732L59.1935 0L130.117 12.3497L101.578 177.081C98.1742 196.717 79.5421 209.874 59.9577 206.461Z" fill="#e435ea" />
+                <path
+                  d="M83.6981 279.124C93.3301 260.771 86.3061 238.061 68.0095 228.399C49.7129 218.737 27.0723 225.783 17.4403 244.136C7.80829 262.489 14.8323 285.2 33.1289 294.861C51.4255 304.523 74.0661 297.477 83.6981 279.124Z"
+                  fill="#e435ea"
+                />
+              </svg>
+              Entertainment
+            </h4>
+            <img src="assets/images/icons/right.svg" alt="down arrow" />
+          </button>
+          <div>
+            <a href="###"><b>All Entertainment</b></a>
+            <a href="###">Recreation and Games</a>
+            <a href="###">Cultural Activities</a>
+          </div>
+        </div>
+        <div class="collapsible">
+          <button onclick="this.parentNode.classList.toggle('open')">
+            <h4>
+              <svg viewBox="0 0 131 313" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M59.9577 206.461C40.3733 203.048 27.2504 184.367 30.6546 164.732L59.1935 0L130.117 12.3497L101.578 177.081C98.1742 196.717 79.5421 209.874 59.9577 206.461Z" fill="" />
+                <path
+                  d="M83.6981 279.124C93.3301 260.771 86.3061 238.061 68.0095 228.399C49.7129 218.737 27.0723 225.783 17.4403 244.136C7.80829 262.489 14.8323 285.2 33.1289 294.861C51.4255 304.523 74.0661 297.477 83.6981 279.124Z"
+                  fill=""
+                />
+              </svg>
+              Courses
+            </h4>
+            <img src="assets/images/icons/right.svg" alt="down arrow icon" />
+          </button>
+          <div>
+            <a href="###">All Courses</a>
+            <a href="###">Computer Science and Programming</a>
+            <a href="###">Marketing and Business</a>
+            <a href="###">Design and Photography</a>
+            <a href="###">Intensive Courses</a>
+          </div>
+        </div>
+
+        <a href="###">Best Sellers</a>
+        <a href="###">Get to Know woOw!</a>
+        <a href="###">Offer Your Services</a>
+        <a href="###">Help</a>
+      </div>
+      <button class="close" onclick="document.querySelector('aside.menu').classList.remove('open')">
+        Close
+        <img src="assets/images/icons/close.svg" alt="close" />
+      </button>
+    </aside>
+    <!-- Sidebar Section Ends Here -->
+
+    <!-- Hamburger close Sidebar on Desktop View -->
+    <div class="vail" onclick="document.querySelector('aside.menu').classList.remove('open')"></div>
+
+    <!-- Main Body Content Starts Here -->
+    <main>
+      <!-- Categories Navbar Starts Here -->
+      <div class="categories swiper categories-navbar-swiper">
+        <div class="swiper-wrapper" style="transition-duration: 0ms; transition-delay: 0ms; transform: translate3d(0px, 0px, 0px)">
+          <a href="###" class="swiper-slide category swiper-slide-active" style="--color: ; width: 150.571px; margin-right: 12px" role="group" aria-label="1/5">
+            <img src="assets/images/icons/getaways.svg" alt="getaway icon" />
+            <p>Getaways</p>
+          </a>
+          <a href="###" class="swiper-slide category swiper-slide-next" style="--color: #f85f55; width: 150.571px; margin-right: 12px" role="group" aria-label="2/5">
+            <img src="assets/images/icons/gastronomy.svg" alt="gastronomy icon" />
+            <p>Gastronomy</p>
+          </a>
+          <a href="###" class="swiper-slide category" style="--color: ; width: 150.571px; margin-right: 12px" role="group" aria-label="3/5">
+            <img src="assets/images/icons/aesthetics-and-well-being.svg" alt="aesthetics and well-being icon" />
+            <p>Aesthetics and Well-being</p>
+          </a>
+          <a href="###" class="swiper-slide category" style="--color: #e435ea; width: 150.571px; margin-right: 12px" role="group" aria-label="4/5">
+            <img src="assets/images/icons/entertainment.svg" alt="entertainment icon" />
+            <p>Entertainment</p>
+          </a>
+          <a href="###" class="swiper-slide category" style="--color: ; width: 150.571px; margin-right: 12px" role="group" aria-label="5/5">
+            <img src="assets/images/icons/courses.svg" alt="courses icon" />
+            <p>Courses</p>
+          </a>
+        </div>
+        <span class="swiper-notification"></span>
+      </div>
+      <!-- Categories Navbar Ends Here -->
+
+      <section class="hero">
+        <img src="assets/images/icons/woo.svg" alt="!oo" class="oo" />
+        <img src="assets/images/icons/o.svg" alt="o" class="o" />
+        <div class="carrousel">
+          <div class="swiper home-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide" data-color="" role="group" aria-label="1 / 3" data-swiper-slide-index="0" style="width: 816px">
+                <div class="slide" style="--color: ; --text-color: #ffffff">
+                  <div class="category">
+                    <img src="assets/images/icons/entertainment.svg" alt="escapades icon" style="filter: brightness(0) invert(1)" />
+                    <p>Entertainment</p>
+                  </div>
+                  <h1>Rest That&nbsp;Enchants</h1>
+                  <h3>Escape in Uruguay, far from the city</h3>
+                  <a href="###" class="cta btn" style="text-align: left; padding-left: 0.5rem">See more</a>
+                  <img src="assets/images/banners/Banner-Home-Escapadas.jpg" class="background" alt="people camping icon" />
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-prev" data-color="#f85f55" role="group" aria-label="2 / 3" data-swiper-slide-index="1" style="width: 816px">
+                <div class="slide" style="--color: #f85f55; --text-color: #ffffff">
+                  <div class="category">
+                    <img src="assets/images/icons/gastronomy.svg" alt="Gastronomy icon" style="filter: brightness(0) invert(1)" />
+                    <p>Gastronomy</p>
+                  </div>
+                  <h1>The Best Gastronomy</h1>
+                  <a href="###" class="cta btn">See more</a>
+                  <img src="assets/images/banners/Banner-Home-Gastronomia.jpg" class="background" alt="people camping" />
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-active" data-color="#e435ea" role="group" aria-label="3 / 3" data-swiper-slide-index="2" style="width: 816px">
+                <div class="slide" style="--color: #e435ea; --text-color: #000000">
+                  <div class="category">
+                    <img src="assets/images/icons/entertainment.svg" alt="entertainment icon" style="filter: brightness(0)" />
+                    <p>Entertainment</p>
+                  </div>
+                  <h1>The Most Fun Experiences Are Here</h1>
+                  <a href="###" class="cta btn">See more</a>
+                  <img src="assets/images/banners/Banner-Home-Entertainment.jpg" class="background" alt="people camping" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination home-slider-bullets swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+              <span class="swiper-pagination-bullet"></span>
+              <span class="swiper-pagination-bullet"></span>
+              <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+            </div>
+          </div>
+        </div>
+        <svg class="exclamation" data-bg="" width="131" style="--bg: #e435ea" height="313" viewBox="0 0 131 313" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M59.9577 206.461C40.3733 203.048 27.2504 184.367 30.6546 164.732L59.1935 0L130.117 12.3497L101.578 177.081C98.1742 196.717 79.5421 209.874 59.9577 206.461Z" fill="var(--bg)"></path>
+          <path
+            d="M83.6981 279.124C93.3301 260.771 86.3061 238.061 68.0095 228.399C49.7129 218.737 27.0723 225.783 17.4403 244.136C7.80829 262.489 14.8323 285.2 33.1289 294.861C51.4255 304.523 74.0661 297.477 83.6981 279.124Z"
+            fill="var(--bg)"
+          ></path>
+        </svg>
+      </section>
+
+      <section class="big-text">
+        <h1>
+          woOw! It is experiences and great opportunities,
+          <a href="###">know us!</a>
+        </h1>
+      </section>
+
+      <div class="cards-background" style="--background: url('assets/images/backgrounds/Background-categoria-gastronomia.jpg'); background-image: var(--background)"></div>
+      <section class="cards">
+        <h2>Gastronomy <a href="###">See More</a></h2>
+        <div class="left gastronomy-arrow-button-left">
+          <button class="arrow left">
+            <img src="assets/images/icons/right.svg" alt="left arrow" />
+          </button>
+        </div>
+        <div class="right gastronomy-arrow-button-right">
+          <button class="arrow right">
+            <img src="assets/images/icons/right.svg" alt="right arrow" />
+          </button>
+        </div>
+        <div class="row cards-carousel swiper gastronomy-swiper" id="slide-17">
+          <div class="swiper-wrapper">
+            <!-- Products Here -->
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/products/Dia-abuelo-say.png" alt="dia-abuelo-say" />
+                  </div>
+
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  0 (0)
+                </div>
+                <div class="title">
+                  <h3>Special Grandparents' Day Dinner</h3>
+                </div>
+                <p class="seller">Say Cheese Punta Carretas</p>
+
+                <p class="location">&#x2022; September 21 2840 Montevideo Department of Montevideo Uruguay</p>
+                <p class="price">
+                  <span>&#8377; <span class="amount">1,400</span></span>
+                </p>
+              </div>
+            </a>
+
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/products/Permedes-surtidos.png" alt="permedes surtidos" />
+                  </div>
+
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  0 (0)
+                </div>
+                <div class="title">
+                  <h3>24 Assorted Sandwiches</h3>
+                </div>
+                <p class="seller">Panadería Permedes Miguelete</p>
+                <p class="location">&#x2022; Miguelete Street 2211 Montevideo Departamento de Montevideo Uruguay</p>
+                <div class="price">
+                  <span class="amount"> <span class="woocommerce-Price-currencySymbol">&#8377;</span>480</span>
+                  <div class="discount">
+                    <span class="amount"> <span>&#8377;</span>553</span>
+                  </div>
+                  <div class="offer">13%</div>
+                </div>
+              </div>
+            </a>
+
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/products/Permedes-JyQ.png" alt="permedes jyq" />
+                  </div>
+
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  0 (0)
+                </div>
+                <div class="title">
+                  <h3>24 Ham and Cheese Sandwiches</h3>
+                </div>
+                <p class="seller">Permedes Miguelete Bakery</p>
+                <p class="location">&#x2022; Calle Miguelete 2211 Montevideo Department of Montevideo Uruguay</p>
+                <div class="price">
+                  <span class="amount"><span>&#8377;</span>480</span>
+                  <div class="discount">
+                    <span class="amount"><span>&#8377;</span>553</span>
+                  </div>
+                  <div class="offer">13%</div>
+                </div>
+              </div>
+            </a>
+
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/products/1.png" alt="1" />
+                  </div>
+
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="tags">
+                  <div><img src="assets/images/icons/veg.png" alt="veg icon" /></div>
+                </div>
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  5.00 (1)
+                </div>
+                <div class="title">
+                  <h3>Afternoon Tea at Radisson Montevideo</h3>
+                </div>
+                <p class="seller">Arcadia</p>
+                <p class="location">&#x2022; Plaza Independencia 759 Montevideo Department of Montevideo Uruguay</p>
+                <p class="sells">191 sold</p>
+                <div class="price">
+                  <span><span>&#8377;</span>1,800</span>
+                  <div class="discount">
+                    <span><span>&#8377;</span>2,160</span>
+                  </div>
+                  <div class="offer">17%</div>
+                </div>
+              </div>
+            </a>
+
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/products/CAfe-salvo-2.png" alt="cafe salvo" />
+                  </div>
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="tags">
+                  <div><img src="assets/images/icons/people.png" alt="people icon" /></div>
+                </div>
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  0 (0)
+                </div>
+                <div class="title">
+                  <h3>Full Tea for 2</h3>
+                </div>
+                <p class="seller">Cafe Salvo</p>
+                <p class="location">&#x2022; Plaza Independencia 846 Montevideo Department of Montevideo Uruguay</p>
+                <p class="price">
+                  <span>
+                    <span>&#8377;</span>720
+                  </span>
+                </p>
+              </div>
+            </a>
+
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img
+                      src="assets/images/products/Desayuno-o-merienda-completa-saludable-para-2-Cafe-Salvo.jpg"
+                      alt="desayuno o merienda completa saludable para 2 cafe salvo"
+                    />
+                  </div>
+
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  0 (0)
+                </div>
+                <div class="title">
+                  <h3>Healthy complete breakfast or snack for 2</h3>
+                </div>
+                <p class="seller">Salvo Coffee</p>
+                <p class="location">&#x2022; Plaza Independencia 846 Montevideo Department of Montevideo Uruguay</p>
+                <p class="price">
+                  <span>
+                    <span>&#8377;</span>500
+                  </span>
+                </p>
+              </div>
+            </a>
+
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/products/4.png" alt="4" decoding="async" />
+                  </div>
+
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                  <div class="medal">
+                    <img src="assets/images/icons/medallaw.svg" alt="woow medal icon"/>
+                  </div>
+                </div>
+
+                <div class="tags">
+                  <div>
+                    <img src="assets/images/icons/people.png" alt="people icon" />
+                  </div>
+                </div>
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  0 (0)
+                </div>
+                <div class="title">
+                  <h3>Afternoon Tea for 2 + Pool Use</h3>
+                </div>
+                <p class="seller">Hilton Garden Inn</p>
+                <p class="location">&#x2022; Doctor Luis Bonavita 1315 Montevideo Department of Montevideo Uruguay</p>
+                <p class="sells">137 sold</p>
+                <div class="price">
+                  <span>
+                    <span>&#8377;</span>2,250
+                  </span>
+                  <div class="discount">
+                    <span>
+                      <span>&#8377;</span>3,120
+                    </span>
+                  </div>
+                  <div class="offer">28%</div>
+                </div>
+              </div>
+            </a>
+
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/products/pebete.jpg" alt="pebete"/>
+                  </div>
+
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  0 (0)
+                </div>
+                <div class="title">
+                  <h3>Lunch for 50 people</h3>
+                </div>
+                <p class="seller">The Little White</p>
+                <p class="location">&#x2022; Reconquista 305 Montevideo Department of Montevideo Uruguay</p>
+                <p class="price">
+                  <span>
+                    <span>&#8377;</span>7,900</span>
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="cards-background" style="--background: url('assets/images/backgrounds/Background-categoria-estetica-y-bienestar.jpg'); background-image: var(--background)"></div>
+      <section class="cards">
+        <h2>Aesthetics and Wellbeing <a href="###">See More</a></h2>
+        <div class="left aesthetics-wellbeing-arrow-button-left">
+          <button class="arrow left">
+            <img src="assets/images/icons/right.svg" alt="left arrow" />
+          </button>
+        </div>
+        <div class="right aesthetics-wellbeing-arrow-button-right">
+          <button class="arrow right">
+            <img src="assets/images/icons/right.svg" alt="right arrow" />
+          </button>
+        </div>
+        <div class="swiper aesthetics-wellbeing-swiper">
+          <div class="swiper-wrapper">
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/products/Perfilado-de-cejas-y-bozo-BLEK.png" alt="perfilado de cejas y bozo blek" />
+                  </div>
+
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  0 (0)
+                </div>
+                <div class="title">
+                  <h3>Eyebrow and upper lip shaping</h3>
+                </div>
+                <p class="seller">Blek Hairdressers</p>
+                <p class="location">&#x2022; Avenida General Flores 3457 Montevideo Department of Montevideo Uruguay</p>
+                <p class="price">
+                  <span>
+                    <span>&#8377;</span>1,200
+                  </span>
+                </p>
+              </div>
+            </a>
+
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/products/Permedes-surtidos.png"  alt="permedes surtidos"/>
+                  </div>
+
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  0 (0)
+                </div>
+                <div class="title">
+                  <h3>24 Assorted Sandwiches</h3>
+                </div>
+                <p class="seller">Panadería Permedes Miguelete</p>
+                <p class="location">&#x2022; Miguelete Street 2211 Montevideo Departamento de Montevideo Uruguay</p>
+                <div class="price">
+                  <span> <span class="woocommerce-Price-currencySymbol">&#8377;</span>480</span>
+                  <div class="discount">
+                    <span>
+                      <span>&#8377;</span>553
+                    </span>
+                  </div>
+                  <div class="offer">13%</div>
+                </div>
+              </div>
+            </a>
+
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/products/Permedes-JyQ.png" alt="permedes jyq"/>
+                  </div>
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  0 (0)
+                </div>
+                <div class="title">
+                  <h3>24 Ham and Cheese Sandwiches</h3>
+                </div>
+                <p class="seller">Permedes Miguelete Bakery</p>
+
+                <p class="location">&#x2022; Calle Miguelete 2211 Montevideo Department of Montevideo Uruguay</p>
+                <div class="price">
+                  <span>
+                    <span>&#8377;</span>480
+                  </span>
+                  <div class="discount">
+                    <span>
+                      <span>&#8377;</span>553
+                    </span>
+                  </div>
+                  <div class="offer">13%</div>
+                </div>
+              </div>
+            </a>
+
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/products/1.png" alt="1" />
+                  </div>
+
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="tags">
+                  <div>
+                    <img src="assets/images/icons/veg.png" alt="veg icon"/></div>
+                </div>
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  5.00 (1)
+                </div>
+                <div class="title">
+                  <h3>Afternoon Tea at Radisson Montevideo</h3>
+                </div>
+                <p class="seller">Arcadia</p>
+                <p class="location">&#x2022; Plaza Independencia 759 Montevideo Department of Montevideo Uruguay</p>
+                <p class="sells">191 sold</p>
+                <div class="price">
+                  <span>
+                    <span>&#8377;</span>1,800
+                  </span>
+                  <div class="discount">
+                    <span>
+                      <span>&#8377;</span>2,160
+                    </span>
+                  </div>
+                  <div class="offer">17%</div>
+                </div>
+              </div>
+            </a>
+
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/products/CAfe-salvo-2.png" alt="cafe salvo" />
+                  </div>
+
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="tags">
+                  <div>
+                    <img src="assets/images/icons/people.png" alt="people icon" />
+                  </div>
+                </div>
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  0 (0)
+                </div>
+                <div class="title">
+                  <h3>Full Tea for 2</h3>
+                </div>
+                <p class="seller">Cafe Salvo</p>
+                <p class="location">&#x2022; Plaza Independencia 846 Montevideo Department of Montevideo Uruguay</p>
+                <p class="price">
+                  <span>
+                    <span>&#8377;</span>720
+                  </span>
+                </p>
+              </div>
+            </a>
+
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img
+                      src="assets/images/products/Desayuno-o-merienda-completa-saludable-para-2-Cafe-Salvo.jpg"
+                      alt="desayuno o merienda completa saludable para 2 cafe salvo"
+                    />
+                  </div>
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  0 (0)
+                </div>
+                <div class="title">
+                  <h3>Healthy complete breakfast or snack for 2</h3>
+                </div>
+                <p class="seller">Salvo Coffee</p>
+                <p class="location">&#x2022; Plaza Independencia 846 Montevideo Department of Montevideo Uruguay</p>
+                <p class="price">
+                  <span>
+                    <span>&#8377;</span>500
+                  </span>
+                </p>
+              </div>
+            </a>
+
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/products/4.png" alt="4"/>
+                  </div>
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                  <div class="medal">
+                    <img src="assets/images/icons/medallaw.svg" alt="woow medal icon"/>
+                  </div>
+                </div>
+
+                <div class="tags">
+                  <div>
+                    <img src="assets/images/icons/people.png" alt="people icon"/>
+                  </div>
+                </div>
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  0 (0)
+                </div>
+                <div class="title">
+                  <h3>Afternoon Tea for 2 + Pool Use</h3>
+                </div>
+                <p class="seller">Hilton Garden Inn</p>
+                <p class="location">&#x2022; Doctor Luis Bonavita 1315 Montevideo Department of Montevideo Uruguay</p>
+                <p class="sells">137 sold</p>
+                <div class="price">
+                  <span>
+                    <span>&#8377;</span>2,250
+                  </span>
+                  <div class="discount">
+                    <span>
+                      <span>&#8377;</span>3,120
+                    </span>
+                  </div>
+                  <div class="offer">28%</div>
+                </div>
+              </div>
+            </a>
+
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/products/pebete.jpg" alt="pebete"/>
+                  </div>
+
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  0 (0)
+                </div>
+                <div class="title">
+                  <h3>Lunch for 50 people</h3>
+                </div>
+                <p class="seller">The Little White</p>
+                <p class="location">&#x2022; Reconquista 305 Montevideo Department of Montevideo Uruguay</p>
+                <p class="price">
+                  <span>
+                    <span>&#8377;</span>7,900
+                  </span>
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper-four">
+        <a href="###" class="m1">
+          <div>
+            <h2>
+              <img src="assets/images/icons/getaways.svg" alt="icon Getaways" />
+              Getaways
+            </h2>
+            <img class="d-only" src="assets/images/img/mosaico_escapadas.jpg" alt="Getaways" />
+            <img class="m-only" src="assets/images/img/mosaico_escapadas_mobile.jpg" alt="Getaways" />
+          </div>
+        </a>
+
+        <a href="###" class="m2">
+          <div>
+            <div>
+              <h3>Beauty and wellness</h3>
+              <img src="assets/images/icons/woow.svg" alt="woow icon" />
+              <button>Explore!</button>
+            </div>
+            <img src="assets/images/img/mosaico_estetica.jpg" alt="beauty and wellness" />
+          </div>
+        </a>
+
+        <a href="###" class="m3">
+          <div>
+            <h2>
+              <img src="assets/images/icons/gastronomy.svg" alt="Gastronomy Icon" />
+              Gastronomy
+            </h2>
+            <img class="d-only" src="assets/images/img/mosaico_gastronomia.jpg" alt="Gastronomy" />
+            <img class="m-only" src="assets/images/img/mosaico_gastronomia_mobile.jpg" alt="Gastronomy" />
+          </div>
+        </a>
+
+        <a href="###" class="m4">
+          <div>
+            <h2>
+              <img src="assets/images/icons/courses.svg" alt="courses icon" />
+              Courses
+            </h2>
+            <img class="d-only" src="assets/images/img/mosaico_cursos.jpg" alt="courses" />
+            <img class="m-only" src="assets/images/img/mosaico_cursos_mobile.jpg" alt="courses" />
+          </div>
+        </a>
+      </section>
+
+      <div class="cards-background" style="--background: url('assets/images/backgrounds/Background-categoria-estetica-y-bienestar.jpg'); background-image: var(--background)"></div>
+      <section class="cards">
+        <h2>More about aesthetics... <a href="###">See More</a></h2>
+        <div class="left about-aesthetics-arrow-button-left">
+          <button class="arrow left">
+            <img src="assets/images/icons/right.svg" alt="left arrow" />
+          </button>
+        </div>
+        <div class="right about-aesthetics-arrow-button-right">
+          <button class="arrow right">
+            <img src="assets/images/icons/right.svg" alt="right arrow" />
+          </button>
+        </div>
+        <div class="row cards-carousel swiper about-aesthetics-swiper">
+          <div class="swiper-wrapper">
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/products/Perfilado-de-cejas-y-bozo-BLEK.png" alt="perfilado de cejas y bozo blek"/>
+                  </div>
+
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  0 (0)
+                </div>
+                <div class="title">
+                  <h3>Eyebrow and upper lip shaping</h3>
+                </div>
+                <p class="seller">Blek Hairdressers</p>
+                <p class="location">&#x2022; Avenida General Flores 3457 Montevideo Department of Montevideo Uruguay</p>
+                <p class="price">
+                  <span>
+                    <span>&#8377;</span>1,200
+                  </span>
+                </p>
+              </div>
+            </a>
+
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/products/Permedes-surtidos.png" alt="permedes surtidos" />
+                  </div>
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  0 (0)
+                </div>
+                <div class="title">
+                  <h3>24 Assorted Sandwiches</h3>
+                </div>
+                <p class="seller">Panadería Permedes Miguelete</p>
+                <p class="location">&#x2022; Miguelete Street 2211 Montevideo Departamento de Montevideo Uruguay</p>
+                <div class="price">
+                  <span>
+                    <span>&#8377;</span>480
+                  </span>
+                  <div class="discount">
+                    <span>
+                      <span>&#8377;</span>553
+                    </span>
+                  </div>
+                  <div class="offer">13%</div>
+                </div>
+              </div>
+            </a>
+
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/products/Permedes-JyQ.png" alt="permedes jyq"/>
+                  </div>
+
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  0 (0)
+                </div>
+                <div class="title">
+                  <h3>24 Ham and Cheese Sandwiches</h3>
+                </div>
+                <p class="seller">Permedes Miguelete Bakery</p>
+
+                <p class="location">&#x2022; Calle Miguelete 2211 Montevideo Department of Montevideo Uruguay</p>
+                <div class="price">
+                  <span>
+                    <span>&#8377;</span>480
+                  </span>
+                  <div class="discount">
+                    <span>
+                      <span>&#8377;</span>553
+                    </span>
+                  </div>
+                  <div class="offer">13%</div>
+                </div>
+              </div>
+            </a>
+
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/products/1.png" alt="1"/>
+                  </div>
+
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="tags">
+                  <div>
+                    <img src="assets/images/icons/veg.png" alt="veg icon"/>
+                  </div>
+                </div>
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  5.00 (1)
+                </div>
+                <div class="title">
+                  <h3>Afternoon Tea at Radisson Montevideo</h3>
+                </div>
+                <p class="seller">Arcadia</p>
+                <p class="location">&#x2022; Plaza Independencia 759 Montevideo Department of Montevideo Uruguay</p>
+                <p class="sells">191 sold</p>
+                <div class="price">
+                  <span>
+                    <span>&#8377;</span>1,800
+                  </span>
+                  <div class="discount">
+                    <span>
+                      <span>&#8377;</span>2,160
+                    </span>
+                  </div>
+                  <div class="offer">17%</div>
+                </div>
+              </div>
+            </a>
+
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/products/CAfe-salvo-2.png"  alt="cafee salvo"/>
+                  </div>
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="tags">
+                  <div>
+                    <img src="assets/images/icons/people.png" alt="people icon"/>
+                  </div>
+                </div>
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  0 (0)
+                </div>
+                <div class="title">
+                  <h3>Full Tea for 2</h3>
+                </div>
+                <p class="seller">Cafe Salvo</p>
+                <p class="location">&#x2022; Plaza Independencia 846 Montevideo Department of Montevideo Uruguay</p>
+                <p class="price">
+                  <span>
+                    <span>&#8377;</span>720
+                  </span>
+                </p>
+              </div>
+            </a>
+
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img
+                      src="assets/images/products/Desayuno-o-merienda-completa-saludable-para-2-Cafe-Salvo.jpg"
+                      alt="desayuno o merienda completa saludable para 2 cafe salvo"
+                    />
+                  </div>
+
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  0 (0)
+                </div>
+                <div class="title">
+                  <h3>Healthy complete breakfast or snack for 2</h3>
+                </div>
+                <p class="seller">Salvo Coffee</p>
+                <p class="location">&#x2022; Plaza Independencia 846 Montevideo Department of Montevideo Uruguay</p>
+                <p class="price">
+                  <span>
+                    <span>&#8377;</span>500
+                  </span>
+                </p>
+              </div>
+            </a>
+
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/products/4.png" alt="4"/>
+                  </div>
+
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                  <div class="medal">
+                    <img src="assets/images/icons/medallaw.svg" alt="Woow medal" />
+                  </div>
+                </div>
+
+                <div class="tags">
+                  <div>
+                    <img src="assets/images/icons/people.png" alt="people icon" />
+                  </div>
+                </div>
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  0 (0)
+                </div>
+                <div class="title">
+                  <h3>Afternoon Tea for 2 + Pool Use</h3>
+                </div>
+                <p class="seller">Hilton Garden Inn</p>
+                <p class="location">&#x2022; Doctor Luis Bonavita 1315 Montevideo Department of Montevideo Uruguay</p>
+                <p class="sells">137 sold</p>
+                <div class="price">
+                  <span>
+                    <span>&#8377;</span>2,250
+                    </span>
+                  <div class="discount">
+                    <span>
+                      <span>&#8377;</span>3,120
+                    </span>
+                  </div>
+                  <div class="offer">28%</div>
+                </div>
+              </div>
+            </a>
+
+            <a href="###" class="swiper-slide">
+              <div class="card">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/products/pebete.jpg" alt="pebete"/>
+                  </div>
+
+                  <button class="like">
+                    <svg width="24" height="22" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        opacity="0.7"
+                        d="M9.97818 17.6876L10.0073 17.7167L10.3606 17.344L11.075 16.5902L17.9124 9.75271L17.9128 9.7523C18.8994 8.76344 19.4535 7.42361 19.4535 6.02674C19.4535 4.62988 18.8994 3.29005 17.9128 2.30118L17.9124 2.30075L17.6549 2.04334C17.6549 2.04333 17.6549 2.04333 17.6549 2.04332C17.1654 1.55379 16.5842 1.16553 15.9445 0.900723C15.3049 0.635909 14.6193 0.49974 13.927 0.5C13.2347 0.50026 12.5492 0.636943 11.9098 0.902238C11.2703 1.16753 10.6894 1.55624 10.2002 2.04614L10.1983 2.04802L9.97719 2.27188L9.75973 2.05039L9.75974 2.05038L9.75651 2.04714L9.75278 2.04342C9.26348 1.55411 8.68259 1.16597 8.04329 0.901164C7.40398 0.636353 6.71878 0.500057 6.0268 0.500057C5.33482 0.500057 4.64961 0.636353 4.01031 0.901164C3.371 1.16597 2.79011 1.55411 2.30081 2.04342C2.30081 2.04342 2.30081 2.04342 2.30081 2.04342L2.04334 2.30089L2.3969 2.65444L2.04334 2.30089C1.05516 3.28908 0.5 4.62935 0.5 6.02685C0.5 7.42436 1.05516 8.76463 2.04334 9.75282L2.3969 9.39927L2.04334 9.75282L8.8345 16.5439L9.59785 17.3437L9.95155 17.7143L9.97818 17.6876Z"
+                        fill="white"
+                        stroke="#151515"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="stars">
+                  <img src="assets/images/icons/star-filled.svg" alt="rating icon" />
+                  0 (0)
+                </div>
+                <div class="title">
+                  <h3>Lunch for 50 people</h3>
+                  <p></p>
+                </div>
+                <p class="seller">The Little White</p>
+
+                <p class="location">&#x2022; Reconquista 305 Montevideo Department of Montevideo Uruguay</p>
+                <p class="price">
+                  <span>
+                    <span>&#8377;</span>7,900
+                  </span>
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="partners-wrapper">
+        <h2>Meet our partners</h2>
+        <div class="swiper partners-carrousel">
+          <div class="swiper-wrapper">
+            <a href="###" class="swiper-slide">
+              <div class="partner">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/partners/partner5.jpg" alt="regency hotel icon"/>
+                  </div>
+                </div>
+                <h3>Regency Hotel</h3>
+              </div>
+            </a>
+            <a href="###" class="swiper-slide">
+              <div class="partner">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/partners/partner6.jpg" alt="wyndham hotel group icon"/>
+                  </div>
+                </div>
+                <h3>Wyndham Hotel Group</h3>
+              </div>
+            </a>
+            <a href="###" class="swiper-slide">
+              <div class="partner">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/partners/partner2.jpg" alt="hilton garden inn icon"/>
+                  </div>
+                </div>
+                <h3>Hilton Garden Inn</h3>
+              </div>
+            </a>
+            <a href="###" class="swiper-slide">
+              <div class="partner">
+                <div class="image-container">
+                  <div class="thumb">
+                    <img src="assets/images/partners/partner3.jpg" alt="francis punta carretas icon"/>
+                  </div>
+                </div>
+                <h3>Francis Punta Carretas</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="bonus-wrapper">
+        <div class="row d-only">
+          <div>
+            <div class="icon">
+              <img src="assets/images/icons/cuotas.svg" alt="cuotas"/>
+            </div>
+            <div class="content">
+              <h3>10, 12, and 18 installments</h3>
+              <p>Access all the woOw! benefits</p>
+            </div>
+          </div>
+          <div>
+            <div class="icon">
+              <img src="assets/images/icons/promotions.svg" alt="promotions"/>
+            </div>
+            <div class="content">
+              <h3>The best Promotions</h3>
+              <p>We guarantee the best opportunities.</p>
+            </div>
+          </div>
+          <div>
+            <div class="icon">
+              <img src="assets/images/icons/safepurchase.svg" alt="safepurchase" />
+            </div>
+            <div class="content">
+              <h3>Your purchase is Safe</h3>
+              <p>Your purchase is protected with us.</p>
+            </div>
+          </div>
+          <div>
+            <div class="icon">
+              <img src="assets/images/icons/creditcards.svg" alt="creditcards" />
+            </div>
+            <div class="content">
+              <h3>Payment methods</h3>
+              <p>Find out all the benefits you have.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row m-only">
+          <div class="slider benefits-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div>
+                  <div class="icon">
+                    <img src="assets/images/icons/cuotas.svg" alt="cuotas" />
+                  </div>
+                  <div class="content">
+                    <h3>10, 12, and 18 installments</h3>
+                    <p>Access all the woOw! benefits</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <div class="icon">
+                    <img src="assets/images/icons/promotions.svg" alt="promotions" />
+                  </div>
+                  <div class="content">
+                    <h3>The best Promotions</h3>
+                    <p>We guarantee the best opportunities.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <div class="icon">
+                    <img src="assets/images/icons/safepurchase.svg" alt="safepurchase" />
+                  </div>
+                  <div class="content">
+                    <h3>Your purchase is Safe</h3>
+                    <p>Your purchase is protected with us.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <div class="icon">
+                    <img src="assets/images/icons/creditcards.svg" alt="creditcards" />
+                  </div>
+                  <div class="content">
+                    <h3>Payment methods</h3>
+                    <p>Find out all the benefits you have.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="indicators"></div>
+      </section>
+
+      <section class="feed">
+        <div class="images d-only">
+          <img class="image" src="assets/images/img/socialfeed.jpg" alt="socialfeed" />
+          <img class="icons" src="assets/images/icons/feedicons.svg" alt="feedicons" />
+        </div>
+        <div class="images m-only">
+          <img class="image" src="assets/images/img/socialfeed_mobile.jpg" alt="socialfeed_mobile" />
+          <img class="icons" src="assets/images/icons/feedicons_mobile.svg" alt="feedicons_mobile" />
+        </div>
+        <div class="content">
+          <p>Share your experiences tag us on</p>
+          <a class="hash" href="###">@woow.uruguay</a>
+          <a href="###" class="btn">Visit</a>
+        </div>
+      </section>
+
+
+      <section class="newsletter-wrapper">
+        <img src="assets/images/img/newsletter.png" alt="newsletter image" />
+        <div>
+          <div class="top">
+            <p>Subscribe to our newsletter and receive the best shopping opportunities in your inbox</p>
+            <img src="assets/images/icons/woow.svg" alt="woow icon" />
+          </div>
+
+
+          <form action="###" id="email-wrapper">
+            <div class="email-form-field" style="position: relative; display: flex; justify-content: start; align-items: center; width: 67%;">
+              <input type="email" id="email" required class="label-field" placeholder="Enter your email address" name="email" />
+              <img style="position: absolute; max-width: 15px; left: 13px;" src="assets/images/icons/mail.svg" alt="mail icon">
+            </div>
+
+            <div id="mupwp-form-submit-container">
+              <input type="submit" id="mupwp-form-save" value="Subscribe" class="button-primary" />
+            </div>
+          </form>
+
+        </div>
+      </section>
+      
+    </main>
+
+    <!-- Main Body Content Ends Here -->
+
+    <!-- Footer Section Ends Here -->
+    <footer>
+      <div class="main">
+        <button class="up" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+          <img src="assets/images/icons/up.svg" alt="up arrow" />
+        </button>
+        <div class="side">
+          <div>
+            <img src="assets/images/logos/site-logo.svg" alt="site logo" />
+            <p>Join us and discover the best shopping opportunities.</p>
+          </div>
+          <div>
+            <a href="sign-up.html" class="btn">Join</a>
+            <a href="login.html" class="btn secondary">Log In</a>
+          </div>
+          <div class="registry">
+            <img src="assets/images/qr_codes/site-qr-code.jpg" alt="QR" />
+            <img src="assets/images/icons/uruguay-natural.svg" alt="uruguay natural" />
+            <span>Verify company registration information. ROT MINTURD</span>
+          </div>
+        </div>
+        <div class="content">
+          <div class="columns">
+            <div>
+              <div>
+                <h4><a href="###">Getaways</a></h4>
+                <a href="###">Hotels</a>
+                <a href="###">Destinations</a>
+                <a href="###">Day trips</a>
+                <a href="###">Heated pools</a>
+              </div>
+              <div>
+                <h4><a href="###">Gastronomy</a></h4>
+                <a href="###">Grill</a>
+                <a href="###">Gourmet experience</a>
+                <a href="###">Menu for 2</a>
+                <a href="###">Snacks</a>
+                <a href="###">Fast food</a>
+                <a href="###">Confectionery and celebrations</a>
+                <a href="###">Buffet</a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <h4><a href="###">Beauty and Wellness</a></h4>
+                <a href="###">Treatments</a>
+                <a href="###">Hair removal</a>
+                <a href="###">Hairdressing combos</a>
+                <a href="###">Spa experience</a>
+                <a href="###">Day spa</a>
+                <a href="###">Massages</a>
+                <a href="###">Men's hairdressing</a>
+                <a href="###">Dentistry</a>
+                <a href="###">Face and skin</a>
+                <a href="###">Progressives</a>
+                <a href="###">Body wellness</a>
+                <a href="###">Coloration</a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <h4><a href="###">Courses</a></h4>
+                <a href="###">Computing and programming</a>
+                <a href="###">Marketing and business</a>
+                <a href="###">Design and photography</a>
+                <a href="###">Intensive courses</a>
+              </div>
+              <div>
+                <h4><a href="###">Entertainment</a></h4>
+                <a href="###">Recreation and games</a>
+                <a href="###">Cultural activities</a>
+              </div>
+            </div>
+            <div>
+              <div class="sociallist">
+                <h4>Social Media</h4>
+                <a href="###" class="social"><img src="assets/images/icons/facebook.svg" alt="Facebook logo" />Facebook</a>
+                <a href="###" class="social"><img src="assets/images/icons/instagram.svg" alt="Instagram logo" />Instagram</a>
+              </div>
+              <div>
+                <a href="###"><h3 class="contact">Contact</h3></a>
+                <h4>Ethics Line</h4>
+                <a href="tel:59825089600">(+598) 25089600 ext. 4600</a>
+                <a href="mailto:etica@woow.com.uy">etica@woow.com.uy</a>
+              </div>
+            </div>
+          </div>
+          <div class="payment">
+            <h4>Payment Methods</h4>
+            <div class="methods">
+              <div><img src="assets/images/icons/visa.svg" alt="visa" /></div>
+              <div><img src="assets/images/icons/master-card.svg" alt="master card" /></div>
+              <div><img src="assets/images/icons/oca.svg" alt="oca" /></div>
+              <div><img src="assets/images/icons/cabal.svg" alt="cabal" /></div>
+              <div><img src="assets/images/icons/creditel.svg" alt="creditel" /></div>
+              <div><img src="assets/images/icons/dinersclub.svg" alt="dinersclub" /></div>
+              <div><img src="assets/images/icons/lider.svg" alt="lider" /></div>
+              <div><img src="assets/images/icons/tarjetad.svg" alt="tarjetad" /></div>
+              <div><img src="assets/images/icons/bbvanet.svg" alt="bbvanet" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="legal">
+        &copy; woOw! 2024
+        <div class="links">
+          <a href="###">Privacy Policy</a>
+          <a href="###">FAQs</a>
+          <a href="###">Terms and Conditions</a>
+          <a href="###">Suggestions</a>
+          <a href="###">Designed by <u>ZoneWebsites</u></a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section Ends Here -->
+
+    <script src="assets/js/swiper/swiper.js"></script>
+    <script src="assets/js/swiper-settings.js"></script>
+  </body>
+</html>
